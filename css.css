@@ -54,7 +54,7 @@ li label {
 .divboton input[type="button"] {
     background-color: burlywood;
     color: #fff;
-    padding: 10px 675px; /* Aumenta el padding para hacer el botón más grande */
+    padding: 10px 20%; /* Aumenta el padding para hacer el botón más grande */
     border: none;
     cursor: pointer;;
     font-size: medium; /* Aumenta el tamaño de fuente */
