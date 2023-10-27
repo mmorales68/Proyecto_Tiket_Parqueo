@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto Tiket de Parqueo</title>
+        <link href="css.css" rel="stylesheet" type="text/css">
+        <script src="scripts.js"></script>
+    </head>
+
+    <body>
+        <div class="divtitulo"><h3>Pago de parqueo empresa UwU</h3></div>
+
+        <div class="contenedorprincipal">
+            <div id="tiket" class="divtiket">
+                <div class="imputNum"><br>
+                    <input type="number" oninput="validacionTiket()" placeholder="Numero de tiket" id="numTiket" autofocus>
+                </div>
+                <p>Ingrese un numero de tiket </p>
+            </div>
+            <div id="tiempo" class="divtiempo">
+                <div class="imputNum"><br>
+                    <input type="number" oninput="estadia()" placeholder="Minutos" id="estadia">
+                </div>
+                <p>Ingrese la cantidad de minutos que utilizo el parqueo</p>
+            </div>
+            <div id="billete" class="divbillete">
+                <p>Tipo de Pago</p>
+                <div class="divinput">
+                    <select size="2" oninput="tipo_pago()" name="pago" id="pago" multiple>
+                        <option>Efectivo</option>
+                        <option>Tarjeta</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedorprincipal">
+            <div id="interfas" class="divinterfas">
+                <h3>Llene los campos requeridos para terminar la transaccion</h1>
+                <li><label id="lbresultadoTiket">Ingrese un numero de tiket valido</label></li>
+                <li><label id="lbestadia">Ingrese la cantidad de minutos</label></li>
+                <li><label id="lbtipo_pago">Selecione un metodo de pago</label></li>
+            </div>
+
+            <div id="tarjeta-efectivo" class="divtarjeta-efectivo">
+            </div>
+        
+        </div>
+
+        <div class="contenedorprincipal">
+            <div id="final" class="divfinal">
+                <div id="total_pago"><h1>Total a Pagar: Q 0.00 </h4></div>
+                <div id="cambio_efectivo"></div>  
+            </div>
+            <div class="divboton">
+                <input type="button" value="Pagar" class="submit" name="VER" onclick="pagar()">
+            </div>
+        </div>
+            
+    </body>
+</html>
